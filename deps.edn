@@ -1,0 +1,11 @@
+{:deps {io.cloudquery/plugin-pb-java {:mvn/version "0.0.16"}
+        io.cloudquery.plugin.sdk/lib {:mvn/version "0.0.27"}
+        org.apache.logging.log4j/log4j-slf4j-impl {:mvn/version "2.20.0"}
+        com.github.oliyh/martian {:mvn/version "0.1.23"}
+        com.github.oliyh/martian-hato {:mvn/version "0.1.23"}
+        cheshire/cheshire {:mvn/version "5.11.0"}
+        metosin/malli {:mvn/version "0.12.0"}
+        hashp/hashp {:mvn/version "0.2.2"}}
+ :aliases {:run-cq {:main-opts ["-m" "ynabber.core"]}}
+ :mvn/repos {"cloudquery-plugin-sdk-java" {:url "https://maven.pkg.github.com/cloudquery/plugin-sdk-java"}
+             "cloudquery-plugin-pb-java" {:url "https://maven.pkg.github.com/cloudquery/plugin-pb-java"}}}

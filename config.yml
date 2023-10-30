@@ -1,0 +1,20 @@
+kind: source
+spec:
+  name: "ynab"
+  registry: "grpc"
+  path: "localhost:7777"
+  version: "v0.0.1"
+  tables:
+    ["*"]
+  destinations:
+    - "postgresql"
+---
+kind: destination
+spec:
+  name: postgresql
+  path: cloudquery/postgresql
+  registry: cloudquery
+  version: "v7.1.0"
+  migrate_mode: forced
+  spec:
+    connection_string: "$PG_CONN_STRING"

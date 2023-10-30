@@ -1,0 +1,12 @@
+cq-docs
+cloudquery.log
+*.iml
+*.idea
+db.sqlite
+.tool-versions
+.nrepl-port
+.rebel_readline_history
+.cq
+.cpcache
+.DS_Store
+.envrc
